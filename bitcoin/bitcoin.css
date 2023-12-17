@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+  line-height: 26px;
+  font-size: 100%;
+  font-weight: lighter;
+  background-color: #f6efe5;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 150%;
+
+}
+
+header {
+  height: 320px;
+  display: grid;
+  grid-template-columns: 30% auto;
+}
+
+header h1 {
+  padding-top: 6em;
+  text-align: center;
+  background-color: #f15a30;
+  color: white;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header h2 {
+  text-align: center;
+  color: white;
+  background-color: black;
+  background-image: url(bitcoin.png);
+  background-position: bottom 10% right 80%;
+  background-repeat: no-repeat;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 1em 3em 0;
+
+}
+
+div {
+  padding: 16px;
+}
+
+.summary {
+  background-color: #c879b2;
+  color: white;
+}
+
+.interest {
+  background-color: #c879b2;
+  color: black;
+}
+
+.origins,
+.popular,
+.finance {
+  background-color: #f6efe5;
+}
+
+div.BTC,
+div.howwork {
+  color: white;
+  background-color: black;
+
+}
+
+div.usage {
+  color: white;
+  background-color: #f15a30;
+}
+
+div.network,
+div.buy {
+  background-color: rgba(0, 188, 217, 0.8);
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    width: 80%;
+    margin: 0 8.5em;
+
+  }
+
+  header {
+    width: 40%;
+    height: 600px;
+    grid-template-columns: 50% auto;
+    float: left;
+  }
+
+  header h1 {
+    background-color: #c879b2;
+    font-size: 200%;
+    text-align: left;
+    padding-left: 0.5em;
+  }
+
+  header h2 {
+    background-position: bottom 10% right 50%;
+    text-align: left;
+    padding-left: 0.5em;
+  }
+  .summary{
+    float: right;
+    width: 55%;
+    height: 35.5em;
+  }
+  .summary p{
+    padding-top: 12em;
+  }
+
+  .origins {
+    padding: 128px 0 128px 250px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "header header"
+      "content-1 content-2";
+      clear: both;
+  }
+
+  .origins h3 {
+    grid-area: header;
+  }
+
+  .origins h3+p {
+    grid-area: content-1;
+    padding-right: 1em;
+  }
+
+  .origins p+p {
+    grid-area: content-2;
+    padding-left: 1em;
+  }
+
+  .BTC {
+    width: 30%;
+    margin-bottom: 100px;
+    padding: 2em 5em;
+  }
+
+  .popular {
+    width: 40%;
+    float: left;
+    margin-left: 300px;
+
+  }
+
+  .network {
+    width: 20%;
+    padding: 100px 1em;
+    margin-right: 5em;
+    float: right;
+  }
+
+  .finance {
+    clear: both;
+    padding: 30px 0 100px 40%;
+  }
+
+  .interest,
+  .howwork,
+  .usage,
+  .buy {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 4em ;
+  }
+
+  .interest h3,
+  .howwork h3,
+  .usage h3,
+  .buy h3 {
+    width: 300px;
+  }
+
+  .interest p,
+  .howwork p,
+  .usage p,
+  .buy p {
+    width: 65%;
+  }
+
+}
