@@ -48,7 +48,7 @@ else:
         if second_int % 86400 == 0:
             print(comma, "seconds ==> ", day_int, "days")
 
-        if hour_int % 24 != 0 and minute_int % 60 == 0 and second_int % 60 == 0:
+        elif hour_int % 24 != 0 and minute_int % 60 == 0 and second_int % 60 == 0:
             print(comma, "seconds ==> ", day_int,
                   "days", hour_int % 24, "hours")
 
